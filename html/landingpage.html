@@ -8,25 +8,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/css/landingpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <header>
         <nav id="nav-bar">
-            <div id="left-nav">
-                <img src="/images/devfinderblue.png" id="logo">
-            </div>
+            <img src="/images/devfinderblue.png">
+    
+            <ul id="nav-ul">
+                
+                <li><a class="nav-anchor" href="#main-section">Início</a></li>
+                <hr>
+                <li><a class="nav-anchor"href="#resources-section">Recursos</a></li>
+                <hr>
+                <li><a class="nav-anchor"href="#about-us-section">Sobre</a></li>
+                <hr>
+                <li><a class="nav-anchor"href="#contact-section">Contato</a></li>
+            </ul>
 
-            <div id="right-nav">
-                <ul id="nav-ul">
-                    <li><a class="nav-anchor" href="#nav-bar">Início</a></li>
-                    <li><a class="nav-anchor"href="#waves-svg">Recursos</a></li>
-                    <li><a class="nav-anchor"href="#about-us-section">Sobre</a></li>
-                    <li><a class="nav-anchor"href="#contact-section">Contato</a></li>
-                    <li><a class="nav-anchor" id="login-btn" href="/html/login.html" >Login</a></li>
-                    <li><a class="nav-anchor" id="signup-btn" href="/html/sign-up.html" >Cadastre-se</a></li>
-                </ul>
+            <div class="nav-btn">
+                <i class="fa-solid fa-user fa-xl"></i>
+                <a href="/html/login.html">Login</a>
+                <a href="/html/sign-up.html"><button class="login-btn">Cadastre-se</button></a>
             </div>
             
+            <i class="fa-solid fa-bars"></i>
         </nav>
     </header>
     <main>
@@ -46,9 +52,10 @@
                 <img src="/images/svganimation.svg" id="animation" > 
             </div>
         </section>
-        <img src="/images/animatedwaves2.gif" id="waves-svg">
 
-        <section id="resources-section">
+        
+        <img src="/images/animatedwaves2.gif" id="waves-svg">
+        <section id="resources-section" class="fade-down-section">
             <h2>Por que usar a DevFinder?</h2>
             <hr>
             <div class="resources-container">
@@ -74,7 +81,7 @@
             </div>
         </section>
         
-        <section id="vacancy-section">
+        <section id="vacancy-section"  class="fade-down-section">
 
             <h3>Não perca tempo</h3>
             <h2>Crie sua conta e candidate-se às vagas</h2>
@@ -136,7 +143,7 @@
                     </div>
                     <div class="vacancy-salary">
                         <i class="fa-solid fa-sack-dollar"></i>
-                        <p>R$ 6.000,00(CLT)</p>
+                        <p>R$ 6.000,00</p>
                     </div>
                     <div class="vacancy-btn">
                         <button class="vancancy-skills">Java</button>
@@ -300,6 +307,7 @@
             
         </footer>
   
-    </main>    
+    </main> 
+    <script src="/js/landingpage.js"></script>
 </body>
 </html>

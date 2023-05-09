@@ -6,16 +6,24 @@
      --vibrant-red: #ea5455;
      --burnt-orange: #f07b3f;
      --light-yellow: #ffd460;
-     --white: #FFFFFF;       
+     --white: #FFFFFF; 
 }
 
-#waves-svg{
-    display: flex;
-    height: 300px;
-    width: 100%;
+::-webkit-scrollbar {
+    width: 10px;
 
-    
 }
+
+::-webkit-scrollbar-thumb {
+    height: 10px;
+    background-image: linear-gradient( to bottom, var(--vibrant-red),var(--burnt-orange), var(--light-yellow));
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+}
+
 
 h1{
     font-size: 3.5em;
@@ -43,35 +51,90 @@ h4{
 span{
     color: var(--burnt-orange)
 }
-#nav-bar{
 
-    width: 1200px;
+* {
+    scroll-behavior: smooth;
+}
+
+.animate__animated.animate__fadeInDown {
+    animation-duration: 2s;
+}
+
+#nav-bar{
+    width: 100%;
     height: 60px;
+    background: var(--white);
+    position: fixed;
+    top: 0;
+    z-index:1;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin: 0 auto;
 }
 
-#left-nav{
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-    
+#nav-bar img {
+    width: 180px;
+
 }
 
-#right-nav{
-    width: 70%;
-}
 
 #nav-ul{
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100%;
+    align-items: center;
+
 }
 
-#logo{
-   width: 180px ;
+#nav-ul li:not(:first-child){
+    margin-left: 1em;
+
 }
+
+#nav-bar hr {
+    display: none;
+}
+
+
+.fa-bars {
+    display: none;
+}
+
+.nav-btn i {
+    color: var(--burnt-orange);
+    margin-right: 0.3em;
+}
+
+.nav-btn a {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.nav-btn > a:hover {
+    color: var(--burnt-orange);
+    cursor: pointer;
+}
+
+.nav-btn button{
+    width: 8.5em;
+    height: 2.1em;
+    color: var(--white);
+    font-size: .9em;
+    margin-left: 1em;
+    letter-spacing: 1px;
+    border-radius: 1em;
+    border: 3px solid var(--burnt-orange);
+    background: var(--burnt-orange);
+    
+}
+
+.nav-btn button:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+    transition: all .5s ease;
+
+}
+
 
 .nav-anchor{
     margin: 1em;
@@ -192,6 +255,13 @@ transform: translateY(0);
 #animation {
     width: 470px;
     margin: 0 0 0 30px;
+}
+
+#waves-svg{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    
 }
 
 #resources-section {
@@ -732,4 +802,211 @@ text-decoration: underline;
     margin-bottom: 2.5em;
 }
 
+@media (max-width: 768px) {
 
+    h1 {
+        font-size: 2.6em;
+        
+    }
+
+    #nav-ul {
+        display: block;
+        position: absolute;
+        background-color: #fdfdfd;
+        height: 200px;
+        width: 300px;
+        right: 0px;
+        top: 50px;
+    }
+
+    #nav-ul li{
+        margin: 1em 0 1em 0;
+    
+    }
+
+    .nav-btn {
+        background-color: #fdfdfd;
+
+    }
+    .fa-bars {
+        display: block;
+        background-color: #fdfdfd;
+        width: 300px;
+
+    }
+
+    #main-section{
+        flex-direction: column-reverse;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+
+
+    }
+
+    .main-left {
+        margin: 1.5em 0 0 5em;
+
+    }
+    .main-left h4 {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .main-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4em 0 0 0;
+    }
+
+    #animation {
+        width: 300px;
+        margin: 0;
+        
+    }
+
+    .main-btn button:nth-child(1) {
+        width: 22em;
+        margin: 0 0 1em 0;
+    }
+    
+
+    #resources-section {
+        flex-direction:  column;
+        margin:0;
+        height: 100%;
+        padding-bottom: 30px;
+        
+    }
+    .resources-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .cards {
+        margin: 0 0 3em 0;
+    }
+
+    #vacancy-section {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding-bottom: 50px;
+
+    }
+    .vacancy-container {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .vacancy-card {
+        margin: 0 0 3em 0;
+    }
+
+    #about-us-section{
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-us-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .left-about-us {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+    .right-about-us {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .team-container {
+        height: 100%;
+        margin: 1em 0;
+        padding-bottom: 20px;
+    }
+
+    .team-container:nth-child(2){
+        margin-left: 0;
+    }
+
+    #up-team {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #down-team {
+        flex-direction: column;
+    }
+
+    #contact-section {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding-bottom: 50px;
+    }
+
+    #contact-section > h1 {
+        font-size: 2.7em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .form-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #form-img {
+        width: 70%;
+        margin: 0;
+    }
+    .left-form {
+        margin: 0;
+        align-items: center;
+    }
+
+    .right-form {
+        margin: 0;
+        width: 90%;
+    }
+    .default-label {
+        position: relative;
+        left: 42px;
+    }
+    
+    .input-container, .fa-sharp, .default-label  {
+        display: flex;
+        justify-content: center;
+    }
+    .default-input, .default-textarea, .default-btn {
+        width: 80%;
+    }
+
+    #footer {
+        height: 100%;
+        width: 100%;
+        padding: 50px 0;
+    }
+    .company-info {
+        flex-direction: column;
+    }
+
+    .company-contact {
+        flex-direction: column;
+    }
+
+    .company-contact div:first-child {
+        margin-bottom: 2em;
+    }
+
+}
