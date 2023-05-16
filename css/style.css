@@ -867,7 +867,7 @@ text-decoration: underline;
     }
 
     #main-section {
-        margin-top: 60px;
+        padding: 90px 0 30px 0;
     }
 
     .main-container {
