@@ -37,13 +37,20 @@
                 </div>
             
                 <label class="default-label" for="password-input">Senha</label>
+
                 <div class="input-container">
                     <i class="fa-sharp fa-solid fa-key"></i>
                     <input type="password" name="form-reg" class="default-input" id="password-input" required placeholder="Senha"
-                    pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="A senha deve ter pelo menos 8 caracteres, uma letra maiúscula e um número.">
-
+                        pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="A senha deve ter pelo menos 8 caracteres, uma letra maiúscula e um número.">
                 </div>
-            
+
+                <div class="input-container">
+                    <i class="fa-sharp fa-solid fa-key"></i>
+                    <input type="password" name="form-reg-confirm" class="default-input" id="password-confirm-input" required placeholder="Confirmar senha"
+                        pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="A senha deve ter pelo menos 8 caracteres, uma letra maiúscula e um número.">
+                </div>
+
+                <p id="password-match-error" style="display: none;">As senhas não coincidem.</p>
                 <label class="default-label" for="phone-number-input">Telefone</label>
                 <div class="input-container">
                     <input type="tel" name="form-reg" class="default-input" id="phone-number-input" required placeholder="Digite seu telefone"

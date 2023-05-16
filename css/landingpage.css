@@ -148,10 +148,18 @@ span{
 
 #main-section{
     display: flex;
-    width: 1200px;
-    margin: 80px auto 0 auto;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
 }
-
+.main-container {
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
 .main-left{
     width: 50%;
     display: flex;
@@ -200,6 +208,7 @@ span{
 }
 
 .main-right {
+    display: flex;
     width: 50%;
 }
 
@@ -809,14 +818,24 @@ text-decoration: underline;
         
     }
 
+    #nav-bar {
+        width: 100%;
+        position: fixed;
+        display: flex;
+    }
+
     #nav-ul {
-        display: block;
+        display: none;
         position: absolute;
-        background-color: #fdfdfd;
+        background-color: #a7a7a7;
         height: 200px;
-        width: 300px;
+        width: 50%;
         right: 0px;
-        top: 50px;
+        top: 60px;
+    }
+
+    #nav-ul li:first-child {
+        margin-left: 1em;
     }
 
     #nav-ul li{
@@ -825,27 +844,31 @@ text-decoration: underline;
     }
 
     .nav-btn {
+        display: none;
         background-color: #fdfdfd;
 
     }
     .fa-bars {
+        position: absolute;
+        right: 10px;
         display: block;
         background-color: #fdfdfd;
-        width: 300px;
+        
 
     }
 
-    #main-section{
-        flex-direction: column-reverse;
-        margin: 0;
+    #main-section {
+        padding: 60px 0;
+    }
+
+    .main-container {
         width: 100%;
-        height: 100%;
-
-
+        flex-direction: column-reverse;
     }
 
     .main-left {
-        margin: 1.5em 0 0 5em;
+        width: 90%;
+        margin: 0;
 
     }
     .main-left h4 {
@@ -858,7 +881,6 @@ text-decoration: underline;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 4em 0 0 0;
     }
 
     #animation {
@@ -923,6 +945,12 @@ text-decoration: underline;
         padding: 0;
         padding-bottom: 50px;
     }
+
+    .left-about-us p {
+        font-size: 1em;
+        padding: 0 30px 0 30px;
+    }
+
     .right-about-us {
         margin: 0;
         width: 100%;
