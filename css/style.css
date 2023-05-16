@@ -26,13 +26,13 @@
 
 
 h1{
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
@@ -99,7 +99,10 @@ span{
 .fa-bars {
     display: none;
 }
-
+.nav-btn {
+    display: flex;
+    align-items: center;
+}
 .nav-btn i {
     color: var(--burnt-orange);
     margin-right: 0.3em;
@@ -814,7 +817,7 @@ text-decoration: underline;
 @media (max-width: 768px) {
 
     h1 {
-        font-size: 2.6em;
+        font-size: 2em;
         
     }
 
@@ -847,10 +850,13 @@ text-decoration: underline;
         color: var(--burnt-orange);
     }
 
-    .nav-btn {
+    .nav-btn button:first-child{
         display: none;
         background-color: #fdfdfd;
 
+    }
+    #login{
+        display: block;
     }
     .fa-bars {
         position: absolute;
