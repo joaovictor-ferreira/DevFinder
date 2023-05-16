@@ -842,6 +842,10 @@ text-decoration: underline;
         margin: 1em 0 1em 0;
     
     }
+    #nav-ul hr {
+        display: block;
+        color: var(--burnt-orange);
+    }
 
     .nav-btn {
         display: none;
