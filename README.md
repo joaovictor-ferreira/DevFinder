@@ -47,10 +47,13 @@ ou
 5. Acesse o site em http://localhost:3000.
 
 ## Tecnologias utilizadas
+- Html
+- CSS
+- Javascript
 - Node.js
 - MySQL
 - React
-- Bootstrap
+
 
 ## Contribuição
 
