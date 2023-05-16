@@ -212,7 +212,7 @@ span{
 
 .main-right {
     display: flex;
-    width: 50%;
+
 }
 
 .main-spacing{
@@ -265,8 +265,7 @@ transform: translateY(0);
 }
 
 #animation {
-    width: 470px;
-    margin: 0 0 0 30px;
+    width: 450px;
 }
 
 #waves-svg{
@@ -868,7 +867,7 @@ text-decoration: underline;
     }
 
     #main-section {
-        padding: 60px 0;
+        margin-top: 60px;
     }
 
     .main-container {
@@ -892,11 +891,8 @@ text-decoration: underline;
         justify-content: center;
         align-items: center;
     }
-
     #animation {
-        width: 300px;
-        margin: 0;
-        
+        width: 350px;
     }
 
     .main-btn button:nth-child(1) {
