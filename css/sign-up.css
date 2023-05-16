@@ -32,6 +32,10 @@ h2{
     font-weight: 400;
 }
 
+a { 
+    color: #000000;
+}
+
 .form-container{
     display: flex;
     align-items: center;
@@ -99,6 +103,8 @@ form{
 
 input[type="date"]{
     padding: 16px 130px;
+    height: 3.5em;
+    width: 29em;
     border-radius: 0.68em;
     margin-bottom: 30px;
 }
@@ -142,7 +148,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: 600;
     line-height: normal;
     margin: 2em 0 0 0;
-    min-height: 1em;
+    min-height: 3em;
     width: 24em;
     outline: none;
     padding: 0.7em 0;
@@ -195,7 +201,10 @@ text-decoration: underline;
         display: none;
     }
 
-
+    .form-container {
+        height: 100%;
+        width: 100%;
+    }
 
     #form-img {
         display: none;
